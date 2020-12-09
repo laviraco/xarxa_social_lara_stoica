@@ -1,0 +1,41 @@
+<form #itemForm="ngForm" (ngSubmit)="onFormSubmit(itemForm) ">
+
+  <div class="form-group bg-aqua">
+    <label for="nombre">Nombre:</label>
+    <input type="text" class="form-control" id="nombre" name="nombre" ngModel required>
+  </div>
+
+  <div class="form-group">
+    <label for="edad">Edad:</label>
+    <input type="number" class="form-control" id="edad" name="edad" ngModel required>
+  </div>
+
+  <div class="form-group">
+    <label for="foto">Foto:</label>
+    <input type="text" class="form-control" id="foto" name="foto" ngModel required>
+  </div>
+
+  <div class="form-group">
+    <label for="descripcion">Descripcion:</label>
+    <input type="text" class="form-control" id="descripcion" name="descripcion" ngModel required>
+  </div>
+
+  <div class="form-group">
+    <label for="correo">Correo:</label>
+    <input type="text" class="form-control" id="correo" name="correo" ngModel required>
+  </div>
+
+  <div class="form-group">
+    <label for="contraseña">Contraseña:</label>
+    <input type="text" class="form-control" id="contraseña" name="contraseña" ngModel required>
+  </div>
+
+  <div class="form-group">
+    <label for="contraseña2">Repetir contraseña(2):</label>
+    <input type="text" class="form-control" id="contraseña2" name="contraseña2" ngModel required>
+  </div>
+
+
+  <button type="submit" class="btn btn-primary" [disabled]="itemForm.invalid">Submit</button>
+
+</form>
